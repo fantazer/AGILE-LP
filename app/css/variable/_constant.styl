@@ -1,0 +1,149 @@
+// ============================ Curent color ============================
+
+navy = #001F3F
+blue = #0074D9
+aqua = #7FDBFF
+teal = #39CCCC
+olive = #3D9970
+green = #2ECC40
+lime = #01FF70
+yellow = #FFDC00
+orange = #FF851B
+red = #FF4136
+fuchsia = #F012BE
+purple = #B10DC9
+maroon = #85144B
+white = #FFFFFF
+silver = #DDDDDD
+gray = #AAAAAA
+black = #383c40
+
+blue = #7e92b7
+red = #FE424C
+pastel = #F8F7F4
+grey = #7d7d7d
+orange = #FFA804
+
+$main-text-color = black
+$link-color = black
+$link-color-visited = grey
+$link-color-hover = black
+
+//  ============================ Typography ============================ 
+
+//webfont('RUB', 'rouble-webfont', 'normal')
+//Add fotn rub write .rub a - (a,b,c,d - change type font)
+
+
+$weigh-light = 300
+$weigh-normal = 400
+$weigh-bold = 700
+
+typeSize(fontSm,font)
+	+below(768px)
+		font-size font px
+	font-size fontSm px
+
+.type--xs
+	typeSize(12,10)
+	
+.type--sm
+	typeSize(14,12)
+
+.type--main
+	typeSize(16,14)
+
+.type--lg
+	typeSize(28,20)
+
+.type--xl
+	typeSize(36,22)
+
+	
+// ============================ Buttons ============================
+
+btnStyle(bg-btn,color-btn)
+	background bg-btn
+	color color-btn
+	border 1px solid color-btn
+	&:hover
+		background darken(bg-btn,20)
+		color color-btn
+
+btnStyleLight(br-btn,color-btn)
+	color color-btn
+	border br-btn solid color-btn
+	&:hover
+		color darken(color-btn,20)
+		border br-btn solid darken(color-btn,20)
+		
+.btn
+	+below(768px)
+		padding 20px 20px
+	up()
+	br(4px)
+	tr(all)
+	display inline-block
+	margin-bottom 20px
+	border 1px solid black
+	font-size 12px
+	border-radius 80px
+	line-height 12px
+	letter-spacing 1px
+	text-transform uppercase
+	font-weight 600
+	padding 20px 40px
+	border none
+	box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .2)
+	margin 20px
+	tr(all)
+	&:hover
+		cursor pointer
+	
+.btn--red
+	@extend .btn
+	background red
+	color white
+	&:hover 
+		background lighten(red,5);
+
+.btn--orange
+	@extend .btn
+	background orange
+	color white
+	font-weight: bold
+	&:hover
+		background lighten(orange,5);
+
+.btn--blue
+	@extend .btn
+	background blue
+	color white
+	&:hover 
+		background lighten(blue,5);
+
+.btn--white
+	@extend .btn
+	background white
+	color blue!important
+	&:hover 
+		background lighten(blue,5);
+	
+button
+	font-family $v-font
+
+// ============================ Inputs ============================
+
+input,textarea,select
+	border 0px
+	padding 10px 15px
+	border 1px solid #e2dede
+	resize: none
+	outline: 0 !important
+	border-radius 4px
+	font-family $v-font
+	display block!important
+	margin-bottom 10px
+	focus(blue)
+	placeholder(black)
+	font-size: 14px

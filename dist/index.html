@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/vendor.css">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-edit.css" />
+	</head>
+	<!-- mixin nameMixin()-->
+	<!-- - var args = Array.prototype.slice.call(arguments)-->
+	<!-- - for item in args-->
+
+	<body>
+		<div class="baner">
+			<div class="filter"></div>
+			<div class="header">
+				<div class="main-cont">
+					<div class="header-wraper">
+						<div class="header__logo-wrap">
+							<a href="http://itexpert.ru" class="header__logo">
+								<img src="img/logo.jpg" alt="" />
+							</a>
+							<a href="#" class="header__logo header__logo--cert">
+								<img src="img/cert-partners.png" alt="" />
+							</a>
+						</div>
+						<div class="header__contact">
+							<div class="header__contact-phone">+7 (495) 981-57-10</div>
+							<div class="header__contact-email">info@itexpert.ru</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="baner-info">
+				<div class="baner-title"> Тренинг
+					<br> ICAgile Certified Professional</div>
+				<div class="baner-title--sub"> (Agile: Гибкие методы управления)</div>
+				<div class="baner-title-small"> Для тех, кто хочет получить систематизированное понимание Agile, разобраться с преимуществами и недостатками гибкого подхода к проектам и продуктам, найти области наилучшего применения Agile</div>
+				<div class="time">Ближайщие даты:</div>
+				<div class="time-el">12-13 октября</div>
+				<div class="time-el">16-17 ноября</div>
+				<div class="btn-row">
+					<div class="btn btn-baner get-modal">Оставить заявку</div>
+					<a href="#" class="btn btn--blue">Оплатить картой</a>
+				</div>
+			</div>
+		</div>
+		<!--.section.section--grey#about
+.main-cont
+	.about-title.title  Наш тренинг поможет, если Вы
+	.about-title.title-sub   Мы находимся в самом удобном месте
+	.about-type.type Учебные классы, предлагаемые в аренду, предназначены для проведения деловых и учебных мероприятий. Современные удобные учебные классы, укомплектованные комфортной мебелью и находящиеся недалеко от м. Красные Ворота/м. Комсомольская, помогут провести любое задуманное Вами мероприятие на высочайшем уровне.
+	.btn-row
+		a(rel="m_PageScroll2id" href="#advant").btn.btn--red Наши преимущества
+		a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+
+
+-->
+		<!--.section#advant
+.main-cont
+	.advant-title.title  Аренда учебного класса в центре Москвы
+	.advant-title.title-sub  Современный подход к обучению
+	.advant-wrap
+		.advant-el
+			.advant-el-header
+				.advant-el-icon
+					+icon("light-bulb","icon")
+				.advant-el-title Удобство
+				.advant-el-text.type  Классический современный дизайн классов с хорошим освещением, удобной мебелью и оборудованием
+		
+		.advant-el
+			.advant-el-header
+				.advant-el-icon
+					+icon("laptop","icon")
+				.advant-el-title Расположение
+				.advant-el-text.type  Мы находимся в центре Москвы (5 минут пешком от ст.м. Красные Ворота и 10 минут пешком от ст.м. Комсомольская)
+
+		.advant-el
+			.advant-el-header
+				.advant-el-icon
+					+icon("like","icon")
+				.advant-el-title Обрудование
+				.advant-el-text.type  Стены с маркерным покрытием, современный проектор и флипчарт, новая мебель
+	.btn-row
+		a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+
+-->
+		<div id="advant" class="section">
+			<div class="main-cont">
+				<div class="advant-title title"> Наш тренинг поможет, если Вы</div>
+				<div class="advant-wrap">
+					<div class="advant-el">
+						<div class="advant-el-header">
+							<div class="advant-el-icon">
+								<svg class="icon">
+									<use xlink:href="#team"></use>
+								</svg>
+							</div>
+							<div class="advant-el-text type"> Менеджер проектов/продуктов/руководитель и хотите повысить эффективность своей работы, команды, всей организации</div>
+						</div>
+					</div>
+					<div class="advant-el">
+						<div class="advant-el-header">
+							<div class="advant-el-icon">
+								<svg class="icon">
+									<use xlink:href="#conversation"></use>
+								</svg>
+							</div>
+							<div class="advant-el-text type"> Ничего не знаете об Agile, но очень хотите узнать. Вы узнаете много нового.</div>
+						</div>
+					</div>
+					<div class="advant-el">
+						<div class="advant-el-header">
+							<div class="advant-el-icon">
+								<svg class="icon">
+									<use xlink:href="#cert"></use>
+								</svg>
+							</div>
+							<div class="advant-el-text type"> Уже обладаете опытом работы по Agile и желаете получить международный сертификат</div>
+						</div>
+					</div>
+				</div>
+				<!--.btn-row
+		a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+		
+		-->
+			</div>
+		</div>
+		<!--.section.section--grey#why
+.main-cont
+	.why-wrap
+		.why-info
+			.why-title.title  Почему у нас нет конкурентов
+			.why-type.type   Интерактивные функции позволяют взаимодействовать с проецируемым с компьютера изображением, используя электронную ручку-указку, а также рисовать, делать записи и работать с различными инструментами в режиме "белой доски".
+			.why-type.type   Старой маркерной доски часто не хватает, с маркерной стеной можно рассказать гораздо больше, это весело и современно - ученикам нравится!
+			.why-type.type  Качественное обучение это способ передать самые ценные знания для своих слушателей.
+
+			.btn-row
+				a(rel="m_PageScroll2id" href="#room").why-btn.btn.btn--blue Наши классы
+		.why-row
+			.why-row-wrap
+				.why-row-el
+					.why-row-icon
+						.why-row-icon-el
+							+icon("book","icon")
+					.why-row-info
+						.why-row-title Комфортное окружение
+						.why-row-text.type  Наши классы оборудованы новой удобной итальянской мебелью, а стены классов имеют специальное покрытие, на котором можно рисовать и писать.
+
+				.why-row-el
+					.why-row-icon
+						.why-row-icon-el
+							+icon("rocket","icon")
+					.why-row-info
+						.why-row-title  Современное оборудование
+						.why-row-text.type  Классы оборудованы короткофокусными интерактивные проекторами, которые установлены на близком расстоянии от экрана.
+
+				//- .why-row-el
+				//- 	.why-row-icon
+				//- 		.why-row-icon-el
+				//- 			+icon("calculator","icon")
+				//- 	.why-row-info
+				//- 		.why-row-title  Lorem ipsum dolor sit.
+				//- 		.why-row-text.type  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui, mollitia dolorum, quae doloribus
+
+				.why-row-el
+					.why-row-icon
+						.why-row-icon-el
+							+icon("share","icon")
+					.why-row-info
+						.why-row-title  Удобное расположение
+						.why-row-text.type Мы расположены в центре Москвы в 5 минутах ходьбы от метро Красные ворота, рядом расположены Казанский, Ярославский и Ленинградский вокзалы.
+
+
+-->
+		<div class="section section--grey">
+			<div class="main-cont">
+				<div class="plan">
+					<div class="plan__el">
+						<div style="background-image:url('https://static.tildacdn.com/tild3062-3463-4433-b133-643962616531/timgouw69753.jpg')" class="plan__img"></div>
+						<div class="plan__info">
+							<div class="plan__title">В ходе тренинга вы</div>
+							<div class="plan__text">
+								<ul>
+									<li>Научитесь писать и оценивать пользовательские истории</li>
+									<li>Выясните, что общего у Agile-команды и группы спецназа</li>
+									<li>Чем отличается Scrum от Kanban</li>
+									<li>Узнаете, кто такой Владелец Продукта и чем он на самом деле владеет?</li>
+									<li>Попробуете себя в роли члена Scrum-команды</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="plan__el">
+					<div class="plan__info">
+						<div class="plan__title">Тренинг позволит</div>
+						<div class="plan__text">
+							<ul>
+								<li>Сформировать грамотное понимание Agile и его возможностей</li>
+								<li>Заложить основы гибкого мышления</li>
+								<li>Безошибочно применять фреймворки Agile в Вашем бизнесе</li>
+								<li>Открыть новые карьерные возможности за счёт подтверждения знаний международным сертификатом Certified Agile Professional</li>
+							</ul>
+						</div>
+					</div>
+					<div style="background-image:url('https://static.tildacdn.com/tild3935-6139-4566-b466-323333336464/williamiven19843.jpg')" class="plan__img"></div>
+				</div>
+			</div>
+		</div>
+		<div id="program" class="section">
+			<div class="main-cont">
+				<div class="advant-title title"> Программа тренинга</div>
+				<div class="day-title">День первый</div>
+				<div class="day">
+					<div class="day__el">
+						<div class="day__numb">1</div>
+						<div class="day__title">Agile в управлении проектами</div>
+						<div class="day__cont">
+							<ul>
+								<li>Подходы к решению организационных задач</li>
+								<li>Системный выбор подхода к управлению</li>
+								<li>Эволюционный и революционный подходы к трансформации</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day__el">
+						<div class="day__numb">2</div>
+						<div class="day__title">История Agile</div>
+						<div class="day__cont">
+							<ul>
+								<li>Waterfall - классическое проектное управление</li>
+								<li>Lean и TQM - принципы постоянного улучшения</li>
+								<li>Agile - зарождение и развитие</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day__el">
+						<div class="day__numb">3</div>
+						<div class="day__title">AgileMindset – переход к гибкой организации</div>
+						<div class="day__cont">
+							<ul>
+								<li>4 ценности и 12 принципов Agile</li>
+								<li>Agile-мышление: основные отличия и элементы</li>
+								<li>3 подхода к Agile-трансформации организации</li>
+								<li>Культурный элемент трансформации</li>
+								<li>Выгоды и цена частых поставок</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day__el">
+						<div class="day__numb">4</div>
+						<div class="day__title">Agile-команда – люди, которые делают проекты</div>
+						<div class="day__cont">
+							<ul>
+								<li>Мотивация Agile-команды: 2 группы факторов</li>
+								<li>Кросс-функциональность – Т-компетенции</li>
+								<li>Практикум: Кросс-функциональные команды</li>
+								<li>Коммуникации – ключевой фактор успеха</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="day-title">День второй</div>
+				<div class="day">
+					<div class="day__el">
+						<div class="day__numb">1</div>
+						<div class="day__title">Scrum: самый популярный гибкий фреймворк</div>
+						<div class="day__cont">
+							<ul>
+								<li>Введение: Роли, процессы, артефакты</li>
+								<li>Практикум: Пользовательские истории</li>
+								<li>Долгосрочное и краткосрочное планирование в Scrum</li>
+								<li>Практикум: Impact Mapping, User Story Mapping</li>
+								<li>Практикум: Игра-симуляция Scrum Card Game</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day__el">
+						<div class="day__numb">2</div>
+						<div class="day__title">Kanban – альтернативный путь к гибкости</div>
+						<div class="day__cont">
+							<ul>
+								<li>Основные ценности Kanban</li>
+								<li>6 практик Kanban</li>
+								<li>WIP-ограничения: избавляемся от перегрузки</li>
+								<li>Метрики в Kanban – развиваемся на основе данных</li>
+							</ul>
+						</div>
+					</div>
+					<div class="day__el">
+						<div class="day__numb">3</div>
+						<div class="day__title">Подведение итогов</div>
+						<div class="day__cont">
+							<ul>
+								<li>Итоги</li>
+								<li>Обратная связь</li>
+								<li>Вручение сертификатов</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--grey">
+			<div class="main-cont">
+				<div class="advant-title title"> Получение сертификата</div>
+				<div class="cert-text">Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile"</div>
+				<div class="cert-img">
+					<img src="img/cert-partners.png" alt="" />
+				</div>
+				<div class="cert-text">Совместно с:</div>
+				<div class="cert-img cert-img--service">
+					<img src="img/logo-service.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="main-cont">
+				<div class="advant-title title"> Пример получаемого сертификата
+					<div class="cert-img__el">
+						<img src="img/sert.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section--trener">
+			<div class="main-cont">
+				<div class="plan">
+					<div class="plan__el">
+						<div style="background-image:url('img/trener.jpg')" class="plan__img"></div>
+						<div class="plan__info">
+							<div class="plan__title">Тренер: Артемий Анцупов</div>
+							<div class="plan__text">
+								<ul>
+									<li>Agile-эксперт, авторизованный инструктор ICAgile</li>
+									<li>Сертифицированный специалист и аккредитованный тренер в области Agile и проектного управления</li>
+									<li>Асессор конкурса «Проектный олимп» в специальной номинации «Гос-Agile»</li>
+									<li>Эксперт подгруппы по применению гибких подходов в государственных проектах федерального проектного офиса</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="get" class="section section--grey">
+			<div class="main-cont">
+				<div class="get-icon">
+					<svg class="icon">
+						<use xlink:href="#interface"></use>
+					</svg>
+				</div>
+				<div class="get-title title"> оставьте свою заявку уже сегодня</div>
+				<div class="title--pay"> Стоимость курса 19 500р</div>
+				<div class="btn-row">
+					<div class="btn btn-baner get-modal">Оставить заявку</div>
+					<a href="#" class="btn btn--blue">Оплатить картой</a>
+				</div>
+				<div class="get-phone">+7 (495) 981-57-10</div>
+				<div class="get-email">info@itexpert.ru</div>
+			</div>
+		</div>
+		<div class="modal">
+			<div class="modal-wrap">
+				<div class="modal-close">
+					<svg class="icon">
+						<use xlink:href="#cancel"></use>
+					</svg>
+				</div>
+				<div class="modal-title">Заполните форму</div>
+				<form action="javascript:void(null);" id="myform">
+					<input type="text" id="name_form" placeholder="Имя и Фамилия" name="name" class="form-control" />
+					<input type="text" id="companytype" placeholder="К какой отрасли относится Ваша компания:" name="companytype" class="form-control" />
+					<input type="text" id="company" placeholder="Из какой Вы компании" name="company" class="form-control" />
+					<input type="text" id="worktype" placeholder="За какой участок работы Вы отвечаете" name="worktype" class="form-control" />
+					<textarea name="text" id="text" rows="5" required="required" placeholder="Ответы на какие вопросы хотели бы получить на вебинаре:" aria-required="true" class="form-control"></textarea>
+					<input type="text" id="email_form" placeholder="Ваш e-mail" name="email" class="form-control" />
+					<input type="text" id="phone_form" placeholder="Ваш телефон" name="phone" class="form-control" />
+					<input type="text" id="town" placeholder="Из какого Вы города(страны)" name="town" class="form-control" />
+					<input type="submit" class="btn--blue" />
+				</form>
+			</div>
+		</div>
+		<script src="js/combined.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/script-edit.js"></script>
+	</body>
+
+</html>

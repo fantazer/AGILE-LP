@@ -1,0 +1,305 @@
+include block_html/_style.jade
+include ../module/**/*.jade
+
+
+.baner
+	.filter
+	.header
+		.main-cont
+			.header-wraper
+				.header__logo-wrap
+					a(href="http://itexpert.ru").header__logo
+						img(src="img/logo.jpg", alt="")
+					a(href="#").header__logo.header__logo--cert
+						img(src="img/cert-partners.png", alt="")
+				.header__contact
+					a(href="tel:+7(495)981-57-10").header__contact-phone +7 (495) 981-57-10
+					a(href="mailto:info@itexpert.ru").header__contact-email info@itexpert.ru
+	.baner-info
+		.baner-title Agile: <br> Гибкие методы управления
+		.baner-title--sub  ( Тренинг ICAgile Certified Professional)
+		.baner-title-small  Для тех, кто хочет получить систематизированное понимание Agile, разобраться с преимуществами и недостатками гибкого подхода к проектам и продуктам, найти области наилучшего применения Agile
+		.time Ближайщие даты:
+		.time-el 12-13 октября
+		.time-el 16-17 ноября
+		.time Цена курса:
+		.time-el 19 500 р.
+		.btn-row
+			.btn.btn-baner.get-modal Оставить заявку
+			a(href="#").btn.btn--blue Оплатить картой
+			a(rel="m_PageScroll2id" href="#program").btn.btn--blue Программа курса
+
+//.section.section--grey#about
+	.main-cont
+		.about-title.title  Наш тренинг поможет, если Вы
+		.about-title.title-sub   Мы находимся в самом удобном месте
+		.about-type.type Учебные классы, предлагаемые в аренду, предназначены для проведения деловых и учебных мероприятий. Современные удобные учебные классы, укомплектованные комфортной мебелью и находящиеся недалеко от м. Красные Ворота/м. Комсомольская, помогут провести любое задуманное Вами мероприятие на высочайшем уровне.
+		.btn-row
+			a(rel="m_PageScroll2id" href="#advant").btn.btn--red Наши преимущества
+			a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+
+
+//.section#advant
+	.main-cont
+		.advant-title.title  Аренда учебного класса в центре Москвы
+		.advant-title.title-sub  Современный подход к обучению
+		.advant-wrap
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("light-bulb","icon")
+					.advant-el-title Удобство
+					.advant-el-text.type  Классический современный дизайн классов с хорошим освещением, удобной мебелью и оборудованием
+			
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("laptop","icon")
+					.advant-el-title Расположение
+					.advant-el-text.type  Мы находимся в центре Москвы (5 минут пешком от ст.м. Красные Ворота и 10 минут пешком от ст.м. Комсомольская)
+
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("like","icon")
+					.advant-el-title Обрудование
+					.advant-el-text.type  Стены с маркерным покрытием, современный проектор и флипчарт, новая мебель
+		.btn-row
+			a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+
+.section#advant
+	.main-cont
+		.advant-title.title  Наш тренинг поможет, если Вы
+		.advant-wrap
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("team","icon")
+					.advant-el-text.type  Менеджер проектов/продуктов/руководитель и хотите повысить эффективность своей работы, команды, всей организации
+
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("conversation","icon")
+					.advant-el-text.type  Ничего не знаете об Agile, но очень хотите узнать. Вы узнаете много нового.
+
+			.advant-el
+				.advant-el-header
+					.advant-el-icon
+						+icon("cert","icon")
+					.advant-el-text.type  Уже обладаете опытом работы по Agile и желаете получить международный сертификат
+		//.btn-row
+			a(rel="m_PageScroll2id" href="#why").btn.btn--blue Почему нас выбирают?
+
+//.section.section--grey#why
+	.main-cont
+		.why-wrap
+			.why-info
+				.why-title.title  Почему у нас нет конкурентов
+				.why-type.type   Интерактивные функции позволяют взаимодействовать с проецируемым с компьютера изображением, используя электронную ручку-указку, а также рисовать, делать записи и работать с различными инструментами в режиме "белой доски".
+				.why-type.type   Старой маркерной доски часто не хватает, с маркерной стеной можно рассказать гораздо больше, это весело и современно - ученикам нравится!
+				.why-type.type  Качественное обучение это способ передать самые ценные знания для своих слушателей.
+
+				.btn-row
+					a(rel="m_PageScroll2id" href="#room").why-btn.btn.btn--blue Наши классы
+			.why-row
+				.why-row-wrap
+					.why-row-el
+						.why-row-icon
+							.why-row-icon-el
+								+icon("book","icon")
+						.why-row-info
+							.why-row-title Комфортное окружение
+							.why-row-text.type  Наши классы оборудованы новой удобной итальянской мебелью, а стены классов имеют специальное покрытие, на котором можно рисовать и писать.
+
+					.why-row-el
+						.why-row-icon
+							.why-row-icon-el
+								+icon("rocket","icon")
+						.why-row-info
+							.why-row-title  Современное оборудование
+							.why-row-text.type  Классы оборудованы короткофокусными интерактивные проекторами, которые установлены на близком расстоянии от экрана.
+
+					//- .why-row-el
+					//- 	.why-row-icon
+					//- 		.why-row-icon-el
+					//- 			+icon("calculator","icon")
+					//- 	.why-row-info
+					//- 		.why-row-title  Lorem ipsum dolor sit.
+					//- 		.why-row-text.type  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui, mollitia dolorum, quae doloribus
+
+					.why-row-el
+						.why-row-icon
+							.why-row-icon-el
+								+icon("share","icon")
+						.why-row-info
+							.why-row-title  Удобное расположение
+							.why-row-text.type Мы расположены в центре Москвы в 5 минутах ходьбы от метро Красные ворота, рядом расположены Казанский, Ярославский и Ленинградский вокзалы.
+
+
+.section.section--grey#program
+	.main-cont
+		.plan
+			.plan__el
+				.plan__img(style="background-image:url('https://static.tildacdn.com/tild3062-3463-4433-b133-643962616531/timgouw69753.jpg')")
+				.plan__info
+					.plan__title В ходе тренинга вы
+					.plan__text
+						ul
+							li Научитесь писать и оценивать пользовательские истории
+							li Выясните, что общего у Agile-команды и группы спецназа
+							li Чем отличается Scrum от Kanban
+							li Узнаете, кто такой Владелец Продукта и чем он на самом деле владеет?
+							li Попробуете себя в роли члена Scrum-команды
+
+		.plan__el
+			.plan__info
+				.plan__title Тренинг позволит
+				.plan__text
+					ul
+						li Сформировать грамотное понимание Agile и его возможностей
+						li Заложить основы гибкого мышления
+						li Безошибочно применять фреймворки Agile в Вашем бизнесе
+						li Открыть новые карьерные возможности за счёт подтверждения знаний международным сертификатом Certified Agile Professional
+			.plan__img(style="background-image:url('https://static.tildacdn.com/tild3935-6139-4566-b466-323333336464/williamiven19843.jpg')")
+
+.section#program
+	.main-cont
+		.advant-title.title  Программа тренинга
+
+		.day-title День первый
+
+		.day
+			.day__el
+				.day__numb 1
+				.day__title Agile в управлении проектами
+				.day__cont
+					ul
+						li Подходы к решению организационных задач
+						li Системный выбор подхода к управлению
+						li Эволюционный и революционный подходы к трансформации
+			.day__el
+				.day__numb 2
+				.day__title История Agile
+				.day__cont
+					ul
+						li Waterfall - классическое проектное управление
+						li Lean и TQM - принципы постоянного улучшения
+						li Agile - зарождение и развитие
+			.day__el
+				.day__numb 3
+				.day__title AgileMindset – переход к гибкой организации
+				.day__cont
+					ul
+						li 4 ценности и 12 принципов Agile
+						li Agile-мышление: основные отличия и элементы
+						li 3 подхода к Agile-трансформации организации
+						li Культурный элемент трансформации
+						li Выгоды и цена частых поставок
+			.day__el
+				.day__numb 4
+				.day__title Agile-команда – люди, которые делают проекты
+				.day__cont
+					ul
+						li Мотивация Agile-команды: 2 группы факторов
+						li Кросс-функциональность – Т-компетенции
+						li Практикум: Кросс-функциональные команды
+						li Коммуникации – ключевой фактор успеха
+
+		.day-title День второй
+
+		.day
+			.day__el
+				.day__numb 1
+				.day__title Scrum: самый популярный гибкий фреймворк
+				.day__cont
+					ul
+						li Введение: Роли, процессы, артефакты
+						li Практикум: Пользовательские истории
+						li Долгосрочное и краткосрочное планирование в Scrum
+						li Практикум: Impact Mapping, User Story Mapping
+						li Практикум: Игра-симуляция Scrum Card Game
+
+			.day__el
+				.day__numb 2
+				.day__title Kanban – альтернативный путь к гибкости
+				.day__cont
+					ul
+						li Основные ценности Kanban
+						li 6 практик Kanban
+						li WIP-ограничения: избавляемся от перегрузки
+						li Метрики в Kanban – развиваемся на основе данных
+			.day__el
+				.day__numb 3
+				.day__title Подведение итогов
+				.day__cont
+					ul
+						li Итоги
+						li Обратная связь
+						li Вручение сертификатов
+
+.section.section--grey
+	.main-cont
+		.advant-title.title  Получение сертификата
+		.cert-text Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile"
+		.cert-img
+			img(src="img/cert-partners.png", alt="")
+		.cert-text Совместно с:
+		.cert-img.cert-img--service
+			img(src="img/logo-service.png", alt="")
+
+
+.section
+	.main-cont
+		.advant-title.title  Пример получаемого сертификата
+			.cert-img__el
+				img(src="img/sert.jpg", alt="")
+
+.section.section--trener
+	.main-cont
+		.plan
+			.plan__el
+				.plan__img(style="background-image:url('img/trener.jpg')")
+				.plan__info
+					.plan__title Тренер: Артемий Анцупов
+					.plan__text
+						ul
+							li Agile-эксперт, авторизованный инструктор ICAgile
+							li Сертифицированный специалист и аккредитованный тренер в области Agile и проектного управления
+							li Асессор конкурса «Проектный олимп» в специальной номинации «Гос-Agile»
+							li Эксперт подгруппы по применению гибких подходов в государственных проектах федерального проектного офиса
+
+.section.section--grey#get
+	.main-cont
+		.get-icon
+			+icon("interface","icon")
+		.get-title.title  оставьте свою заявку уже сегодня
+		.title--pay  Стоимость курса 19 500р
+
+		.btn-row
+			.btn.btn-baner.get-modal Оставить заявку
+			a(href="#").btn.btn--blue Оплатить картой
+		a(href="tel:+7(495)981-57-10").get-phone +7 (495) 981-57-10
+		a(href="mailto:info@itexpert.ru").get-email info@itexpert.ru
+
+.modal
+	.modal-wrap
+		.modal-close
+			+icon("cancel","icon")
+		.modal-title Заполните форму
+		.thx.hidden
+			.thx-wrap
+				+icon("interface","icon")
+				.thx-text Спасибо, что приняли приглашение! <br> За день до вебинара Вам придёт сообщение со ссылкой для подключения.<br> Ждём Вас на обучение!
+		form(action="javascript:void(null);")#myform
+			input(type="text" class="form-control" id="name_form" placeholder="Имя и Фамилия" name="name")
+			input(type="text" class="form-control" id="companytype" placeholder="К какой отрасли относится Ваша компания:" name="companytype")
+			input(type="text" class="form-control" id="company" placeholder="Из какой Вы компании" name="company")
+			input(type="text" class="form-control" id="worktype" placeholder="За какой участок работы Вы отвечаете" name="worktype")
+			textarea(name="text" id="text" class="form-control" rows="5" required="required" placeholder="Ответы на какие вопросы хотели бы получить на вебинаре:" aria-required="true")
+			input(type="text" class="form-control" id="email_form" placeholder="Ваш e-mail" name="email")
+			input(type="text" class="form-control" id="phone_form" placeholder="Ваш телефон" name="phone")
+			input(type="text" class="form-control" id="town" placeholder="Из какого Вы города(страны)" name="town")
+
+			input(type="submit" ).btn--blue
+include ./block_html/_script.jade

@@ -1,0 +1,567 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_default.styl"
+@import "variable/_constant.styl"
+@import "variable/_helper.styl"
+@import "variable/_configurator.styl"
+@import "variable/_grid.styl"
+
+rupture.scale = 0 480px 768px 992px 1200px
+rupture.scale-names = 'xs' 'sm' 'md' 'lg'
+
+// Grid breakpoints
+$breakpoints = {
+  'xs' :  0,
+  'sm' : 480px,
+  'md' : 768px,
+  'lg' : 992px,
+  'xl' : 1200px
+}
+
+// Number of columns
+$columns = 12
+
+init($breakpoints, $columns)
+
+body
+	@extend .type--main
+	font-family  'Open Sans', sans-serif
+	color $main-text-color
+	letter-spacing 0.01em
+	
+	
+.main-cont
+	center(1200px,10px)
+
+.baner
+	width 100%
+	min-height 700px
+	height 100vh
+	background-image url("../img/agile_landing_bg.jpg")
+	position relative
+	bg-full()
+	flex(mid)
+	background-attachment: fixed
+.filter
+	background rgba(48, 75, 125, 0.92)
+	position absolute
+	top 0 
+	left 0 
+	width 100%
+	height 100%
+.header
+	position absolute
+	top 0
+	left 0
+	z-index 100
+	width 100%
+
+.header-wraper
+	+below(768px)
+		fl()
+		flex(mid)
+		fw()
+	flex(between)
+	padding 20px 0
+//.main-cont
+//.header__logo
+
+.header__contact
+	+below(768px)
+		margin-top: 20px
+
+.header__contact-phone
+	+below(768px)
+		font-size 14px
+		text-align center
+		margin-top 10px
+	font-size 20px
+	color white
+	display: block
+.header__contact-email
+	+below(768px)
+		font-size 14px
+		text-align center
+	display: block
+	font-size 16px
+	color white
+	text-align right
+	
+.baner-info
+	+below(768px)
+		margin-top 80px
+	position relative
+	flex(mid)
+	fl()
+
+.baner-title
+	+below(1378px)
+		font-size: 38px
+	+below(768px)
+		font-size 17px
+		margin-bottom: 10px
+	font-size 64px
+	text-align center
+	margin-bottom 20px
+	color orange
+	//font-weight: bold
+
+.baner-title-sub
+	+below(768px)
+		br(0px)
+		font-size 20px
+		text-align center
+		font-size 26px
+		font-weight 700
+		width 100%
+	br(20px)
+	padding 10px 80px
+	background red
+	color white
+	font-size 34px
+	display inline-block 
+	margin-bottom 40px
+	span
+		font-size 14px
+
+.baner-title-small
+	+below(1378px)
+		font-size: 14px
+		width: 60%
+	+below(768px)
+		text-align center
+		font-size 12px
+		width: 100%
+	line-height: 1.8
+	width: 50%
+	font-size 16px
+	color white
+	margin-bottom 2%
+	text-align: center
+
+.btn-baner
+	+below(768px)
+		margin-bottom: 10px
+		width: 100%
+		text-align: center
+	font-size 14px
+	@extend .btn--orange
+
+.section
+	+below(768px)
+		padding 40px 0
+	padding 100px 0
+
+.title
+	+below(768px)
+		font-size 18px
+	font-size 32px
+	up()
+	margin-bottom 30px
+	text-align center
+.title-text
+	font-size 22px
+	margin-bottom 20px
+.title-sub
+	+below(768px)
+		font-size 16px
+	text-align center
+	color #7d7d7d
+	margin-bottom 20px
+.type
+	+below(768px)
+		font-size 14px
+		line-height 20px 
+	font-size 16px 
+	color #7d7d7d
+	line-height 32px
+.about-type
+	+below(768px)
+		width 100%
+	text-align center
+	width 80%
+	margin 0 auto
+
+.btn-row
+	+below(1378px)
+		margin: 10px 0
+	+below(768px)
+		fl()
+		margin 15px 0
+		.btn
+			width: 100%
+			text-align: center
+	flex(mid)
+	margin 30px 0
+
+.section--grey
+	background pastel 
+
+.advant-wrap
+	+below(768px)
+		margin 30px 0
+		fl()
+	flex between
+	align-items: flex-start
+	margin-top 80px
+	margin-bottom 60px
+.advant-el
+	+below(768px)
+		width 100%
+		margin-bottom 20px
+	width 30%
+.advant-el-header
+	+below(768px)
+		flex(mid)
+		fl()
+		fw()
+	flex(mid)
+	fl()
+.advant-el-icon
+	.icon
+		size 80px
+		fill orange
+	margin-bottom 20px
+.advant-el-title
+	@extend .title-text
+
+.advant-el-text
+	text-align: center
+	+below(768px)
+		text-align center
+//.type
+
+
+.why-wrap
+	+below(1024px)
+		fw()
+	flex(between)
+	align-items flex-start
+	.btn-row
+		justify-content flex-start
+.why-info
+	+below(1024px)
+		width 100%
+	width 48%
+.why-title
+	+below(1024px)
+		text-align center
+		font-size 18px
+	text-align left
+	font-size 28px
+.why-type
+	margin-bottom 20px
+
+//.why-btn
+//.btn--red
+.why-row
+	+below(1024px)
+		width 100%
+	width 48%
+//.why-row-wrap
+.why-row-el
+	+below(768px)
+		fl()
+	flex(between)
+	margin-bottom 20px
+	padding 20px
+	background white 
+.why-row-icon-el
+	round()
+	flex(mid) 
+	size 80px
+	background lighten(red,40)
+	border 1px solid lighten(red,20)
+.why-row-icon
+	+below(768px)
+		margin-bottom 20px
+		width 100%
+		flex(mid)
+	width 15%
+	.icon
+		size 40px
+		fill red
+.why-row-info
+	+below(768px)
+		text-align center
+	width 80%
+.why-row-title
+	+below(768px)
+		text-align center
+	font-size 20px
+	margin-bottom 10px
+.why-row-text
+	line-height 20px
+
+//.room-title
+//.title
+//.title-sub
+.room-wrap
+	+below(768px)
+		margin-top 30px
+	flex(between)
+	fw()
+	margin-top 80px
+.room-el
+	+below(768px)
+		width 48%
+		margin-bottom 10px
+	width 32%
+	margin-bottom 20px
+	bg-full()
+	tr(all)
+	&:hover
+		transform scale(1.2)
+.get-price
+	text-align center
+	font-size 60px
+	span
+		font-size 20px
+.get-icon
+	flex(mid)
+	fill white
+	margin-bottom 30px
+	.icon
+		+below(768px)
+			size 80px
+		fill green
+.get-phone
+	display: block
+	color #383c40
+	font-size 28px
+	text-align center
+	margin-bottom 20px
+.get-email
+	display: block
+	color #383c40
+	text-align center
+	font-size 18px
+	
+.modal
+	display none
+	+below(768px)
+		width 90%
+.modal-wrap
+	+below(768px)
+		width 100%
+		min-width inherit
+	position relative
+	padding 40px 20px
+	background white 
+	width 30%
+	min-width 400px
+	input
+		width 100%
+		margin-bottom 20px
+	.btn--blue
+		+below(768px)
+			width 100%
+		width initial
+		margin 20px auto 
+.modal-title
+	text-align center
+	margin-bottom 30px
+	up()
+	font-size 22px
+.modal-icon
+	flex(mid)
+	margin-bottom 10px
+	.icon
+		+below(768px)
+			size 60px
+		size 100px
+		fill blue
+
+.modal-close
+	+below(768px)
+		top 15px
+		right: 15px
+	position absolute
+	top 20px
+	right 20px
+	cp()
+	.icon
+		+below(768px)
+			size 20px
+		size 30px
+		fill grey
+
+label.error
+	margin-top -10px
+	margin-bottom 10px
+	display block
+
+.time
+	+below(768px)
+		margin-bottom: 10px
+	up()
+	font-weight: bold
+	color orange
+	margin-bottom: 20px
+
+.time-el
+	+below(1378px)
+		font-size: 24px
+	+below(768px)
+		font-size: 16px
+	color white
+	font-size: 36px
+	margin-bottom: 10px
+
+//.plan
+.plan__el
+	+below(768px)
+		min-height 400px
+	f()
+	fw()
+	justify-content: space-between
+	margin-bottom: 20px
+	min-height 700px
+.plan__img
+	+below(768px)
+		width: 100%
+	width: 48%
+	min-height: 300px
+	bg-full()
+.plan__info
+	+below(768px)
+		width: 100%
+	padding: 5%
+	width: 48%
+	background: white
+	flex(mid)
+	fl()
+.plan__title
+	+below(768px)
+		text-align: center
+	@extend .type--lg
+	margin-bottom: 20px
+	font-weight:bold
+
+.plan__text
+	@extend .type--main
+	li
+		margin-bottom: 20px
+
+.day-title
+	+below(768px)
+		font-size: 14px
+		margin-bottom: 20px
+	text-align: center
+	@extend .type--main
+	up()
+	font-size: 24px
+	font-weigh bold
+	margin-bottom: 60px
+
+.day
+	+below(768px)
+		margin-bottom: 30px
+	f()
+	fw()
+	justify-content space-between
+	margin-bottom: 80px
+
+.day__el
+	+below(768px)
+		flex(mid)
+		fl()
+		width: 48%
+		margin-bottom: 20px
+		padding: 10px
+	+below(640px)
+		width: 100%
+	width: 22%
+
+.day__numb
+	size 50px
+	background: red
+	flex(mid)
+	round()
+	color white
+	font-size:24px
+	margin-bottom: 30px
+
+
+.day__title
+	font-weight:bold
+.day__cont
+	ul
+		padding-left: 10px
+	li
+		font-size: 14px
+		margin-bottom: 10px
+
+.cert-img
+	+below(768px)
+		img
+			width: 70%
+	flex(mid)
+
+.cert-text
+	+below(768px)
+		width: 100%
+		margin: 40px 0
+	text-align: center
+	width: 70%
+	margin: 40px auto
+
+.section--trener
+	padding 0
+	.plan__el
+		margin-bottom: 0
+
+textarea
+	width: 100%
+
+.cert-img--service
+	margin-bottom: 60px
+	img
+		+below(768px)
+			width: 70%
+		width: 180px
+
+.cert-img__el
+	flex(mid)
+	img
+		bsh()
+	margin-top: 60px
+
+.title--pay
+	+below(768px)
+		font-size: 16px
+	font-size: 26px
+	text-align: center
+
+.baner-title--sub
+	+below(768px)
+		font-size: 10px
+		margin-bottom: 10px
+	up()
+	margin-bottom: 20px
+	color orange
+
+.header__logo--cert
+	margin-left: 40px
+	img
+		width: 150px
+
+.header__logo-wrap
+	flex(between)
+
+.thx-wrap
+	flex(mid)
+	fl()
+	.icon
+		fill green
+		margin-bottom: 30px
+
+.thx-text
+	text-align: center
+
+.hidden
+	display: none
+
+@import "../module/**/*"
