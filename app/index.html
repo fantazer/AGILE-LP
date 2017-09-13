@@ -5,7 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="format-detection" content="telephone=no" />
-		<title>Document</title>
+		<title>Agile: Гибкие методы управления</title>
 		<!--build:css css/vendor.css-->
 		<link rel="stylesheet" href="bower/normalize.css/normalize.css" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico" />
@@ -32,9 +32,9 @@
 							<a href="http://itexpert.ru" class="header__logo">
 								<img src="img/logo.jpg" alt="" />
 							</a>
-							<a href="#" class="header__logo header__logo--cert">
-								<img src="img/cert-partners.png" alt="" />
-							</a>
+							<div class="header__logo header__logo--cert">
+								<img src="img/acredit-logo.png" alt="" />
+							</div>
 						</div>
 						<div class="header__contact">
 							<a href="tel:+7(495)981-57-10" class="header__contact-phone">+7 (495) 981-57-10</a>
@@ -52,10 +52,19 @@
 				<div class="time-el">12-13 октября</div>
 				<div class="time-el">16-17 ноября</div>
 				<div class="time">Цена курса:</div>
-				<div class="time-el">19 500 р.</div>
+				<div class="price-row">
+					<div class="price-row__item">
+						<div class="time-el">19 500 р.</div>
+						<div class="price-descr">Со скидкой 20% до 25.09.17</div>
+					</div>
+					<div class="price-row__item">
+						<div class="time-el time-el--bad">24 500 р.</div>
+						<div class="price-descr">базовая стоимость</div>
+					</div>
+				</div>
 				<div class="btn-row">
 					<div class="btn btn-baner get-modal">Оставить заявку</div>
-					<a href="#" class="btn btn--blue">Оплатить картой</a>
+					<a href="http://www.itexpert.ru/rus/services/training/moscow/detail.php?ID=7796" class="btn btn--blue">Оплатить картой</a>
 					<a rel="m_PageScroll2id" href="#program" class="btn btn--blue">Программа курса</a>
 				</div>
 			</div>
@@ -192,7 +201,7 @@
 			<div class="main-cont">
 				<div class="plan">
 					<div class="plan__el">
-						<div style="background-image:url('https://static.tildacdn.com/tild3062-3463-4433-b133-643962616531/timgouw69753.jpg')" class="plan__img"></div>
+						<div style="background-image:url('img/baner-1.jpg')" class="plan__img"></div>
 						<div class="plan__info">
 							<div class="plan__title">В ходе тренинга вы</div>
 							<div class="plan__text">
@@ -219,7 +228,7 @@
 							</ul>
 						</div>
 					</div>
-					<div style="background-image:url('https://static.tildacdn.com/tild3935-6139-4566-b466-323333336464/williamiven19843.jpg')" class="plan__img"></div>
+					<div style="background-image:url('img/baner-2.jpg')" class="plan__img"></div>
 				</div>
 			</div>
 		</div>
@@ -320,7 +329,8 @@
 		<div class="section section--grey">
 			<div class="main-cont">
 				<div class="advant-title title"> Получение сертификата</div>
-				<div class="cert-text">Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile"</div>
+				<div class="cert-text">Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile</div>
+				<a href="http://www.icagile.com/Overview" class="cert-text__link">Сайт консорциума</a>
 				<div class="cert-img">
 					<img src="img/cert-partners.png" alt="" />
 				</div>
@@ -335,6 +345,17 @@
 				<div class="advant-title title"> Пример получаемого сертификата
 					<div class="cert-img__el">
 						<img src="img/sert.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section">
+			<div class="main-cont">
+				<div class="advant-title title"> Заменит ли Agile водопадный подход?
+					<div class="video">
+						<div class="video-wrap">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/DNJjjp_nK5I" frameborder="0" allowfullscreen="allowfullscreen" class="video-el"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -366,11 +387,21 @@
 						<use xlink:href="#interface"></use>
 					</svg>
 				</div>
-				<div class="get-title title"> оставьте свою заявку уже сегодня</div>
-				<div class="title--pay"> Стоимость курса 19 500р</div>
+				<div class="get-title title title--sale"> Часто свободные места в группе заканчиваются задолго до начала занятий. Поэтому заявку на обучение необходимо отправить как можно раньше!</div>
+				<div class="price-row price-row--dark">
+					<div class="price-row__item">
+						<div class="time-el">19 500 р.</div>
+						<div class="price-descr">Со скидкой 20% до 25.09.17</div>
+					</div>
+					<div class="price-row__item">
+						<div class="time-el time-el--bad">24 500 р.</div>
+						<div class="price-descr">базовая стоимость</div>
+					</div>
+				</div>
+				<!--.title--pay  Стоимость курса 19 500 р.-->
 				<div class="btn-row">
 					<div class="btn btn-baner get-modal">Оставить заявку</div>
-					<a href="#" class="btn btn--blue">Оплатить картой</a>
+					<a href="http://www.itexpert.ru/rus/services/training/moscow/detail.php?ID=7796" class="btn btn--blue">Оплатить картой</a>
 				</div>
 				<a href="tel:+7(495)981-57-10" class="get-phone">+7 (495) 981-57-10</a>
 				<a href="mailto:info@itexpert.ru" class="get-email">info@itexpert.ru</a>
@@ -389,20 +420,18 @@
 						<svg class="icon">
 							<use xlink:href="#interface"></use>
 						</svg>
-						<div class="thx-text">Спасибо, что приняли приглашение!
-							<br> За день до вебинара Вам придёт сообщение со ссылкой для подключения.
-							<br> Ждём Вас на обучение!</div>
+						<div class="thx-text">Спасибо, что приняли приглашение!</div>
 					</div>
 				</div>
 				<form action="javascript:void(null);" id="myform">
+					<select id="date_form">
+						<option>12-13.10.2017</option>
+						<option>16-17.11.2017</option>
+					</select>
 					<input type="text" id="name_form" placeholder="Имя и Фамилия" name="name" class="form-control" />
-					<input type="text" id="companytype" placeholder="К какой отрасли относится Ваша компания:" name="companytype" class="form-control" />
-					<input type="text" id="company" placeholder="Из какой Вы компании" name="company" class="form-control" />
-					<input type="text" id="worktype" placeholder="За какой участок работы Вы отвечаете" name="worktype" class="form-control" />
-					<textarea name="text" id="text" rows="5" required="required" placeholder="Ответы на какие вопросы хотели бы получить на вебинаре:" aria-required="true" class="form-control"></textarea>
-					<input type="text" id="email_form" placeholder="Ваш e-mail" name="email" class="form-control" />
-					<input type="text" id="phone_form" placeholder="Ваш телефон" name="phone" class="form-control" />
-					<input type="text" id="town" placeholder="Из какого Вы города(страны)" name="town" class="form-control" />
+					<input type="text" id="email_form" placeholder="Почта" name="email" class="form-control" />
+					<input type="text" id="phone_form" placeholder="Телефон" name="phone" class="form-control" />
+					<textarea name="text" id="text" rows="5" required="required" placeholder="Ваше сообщение.Если плательщиком выступит организация, укажите её название" aria-required="true" class="form-control"></textarea>
 					<input type="submit" class="btn--blue" />
 				</form>
 			</div>

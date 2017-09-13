@@ -35,15 +35,31 @@ body
 .main-cont
 	center(1200px,10px)
 
+.video
+	flex(mid)
+	margin-top: 80px
+
+.video-wrap
+	+below(768px)
+		width: 100%
+	width: 70%
+	height: 400px
+.video-el
+	width: 100%
+	height: 400px
+
 .baner
+	+below(768px)
+		min-height 800px
 	width 100%
 	min-height 700px
 	height 100vh
-	background-image url("../img/agile_landing_bg.jpg")
+	background-image url("../img/class-5.jpg")
 	position relative
 	bg-full()
 	flex(mid)
 	background-attachment: fixed
+
 .filter
 	background rgba(48, 75, 125, 0.92)
 	position absolute
@@ -91,7 +107,7 @@ body
 	
 .baner-info
 	+below(768px)
-		margin-top 80px
+		margin-top 180px
 	position relative
 	flex(mid)
 	fl()
@@ -143,9 +159,11 @@ body
 
 .btn-baner
 	+below(768px)
-		margin-bottom: 10px
+		margin-bottom: 20px
 		width: 100%
 		text-align: center
+		font-size: 10px
+		display: block
 	font-size 14px
 	@extend .btn--orange
 
@@ -186,15 +204,23 @@ body
 
 .btn-row
 	+below(1378px)
-		margin: 10px 0
+		margin: 30px 0
 	+below(768px)
 		fl()
-		margin 15px 0
+		margin 0
+		margin-bottom: 10px
+		width: 100%
 		.btn
 			width: 100%
 			text-align: center
 	flex(mid)
 	margin 30px 0
+	.btn
+		+below(768px)
+			margin-right: 0
+		margin-right: 20px
+		&:last-child()
+			margin-right: 0px
 
 .section--grey
 	background pastel 
@@ -352,7 +378,7 @@ body
 	background white 
 	width 30%
 	min-width 400px
-	input
+	input,select
 		width 100%
 		margin-bottom 20px
 	.btn--blue
@@ -412,23 +438,21 @@ label.error
 
 //.plan
 .plan__el
-	+below(768px)
-		min-height 400px
+
 	f()
 	fw()
 	justify-content: space-between
 	margin-bottom: 20px
-	min-height 700px
 .plan__img
 	+below(768px)
 		width: 100%
 	width: 48%
-	min-height: 300px
 	bg-full()
+	min-height 400px
 .plan__info
 	+below(768px)
 		width: 100%
-	padding: 5%
+	padding: 2%
 	width: 48%
 	background: white
 	flex(mid)
@@ -532,6 +556,7 @@ textarea
 .title--pay
 	+below(768px)
 		font-size: 16px
+		margin-bottom: 30px
 	font-size: 26px
 	text-align: center
 
@@ -539,7 +564,6 @@ textarea
 	+below(768px)
 		font-size: 10px
 		margin-bottom: 10px
-	up()
 	margin-bottom: 20px
 	color orange
 
@@ -564,4 +588,42 @@ textarea
 .hidden
 	display: none
 
+.cert-text__link
+	text-align: center
+	color blue
+	text-decoration: underline
+	display: block
+
+.title--sale
+	text-transform: none
+	font-size: 18px
+	width: 60%
+	margin: 0 auto
+	margin-bottom: 30px
+
+.price-descr
+	text-align: center
+	color white
+.time-el--bad
+	text-decoration: line-through
+
+.price-row
+	+below(768px)
+		margin-bottom: 20px
+	f()
+	justify-content: center
+
+.price-row__item
+	flex(mid)
+	fl()
+	&:nth-child(1)
+		+below(768px)
+			margin-right: 20px
+		margin-right: 50px
+
+.price-row--dark
+	.price-descr
+		color black
+	.time-el
+		color black
 @import "../module/**/*"

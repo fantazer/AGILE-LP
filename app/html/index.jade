@@ -10,8 +10,8 @@ include ../module/**/*.jade
 				.header__logo-wrap
 					a(href="http://itexpert.ru").header__logo
 						img(src="img/logo.jpg", alt="")
-					a(href="#").header__logo.header__logo--cert
-						img(src="img/cert-partners.png", alt="")
+					.header__logo.header__logo--cert
+						img(src="img/acredit-logo.png", alt="")
 				.header__contact
 					a(href="tel:+7(495)981-57-10").header__contact-phone +7 (495) 981-57-10
 					a(href="mailto:info@itexpert.ru").header__contact-email info@itexpert.ru
@@ -23,10 +23,16 @@ include ../module/**/*.jade
 		.time-el 12-13 октября
 		.time-el 16-17 ноября
 		.time Цена курса:
-		.time-el 19 500 р.
+		.price-row
+			.price-row__item
+				.time-el 19 500 р.
+				.price-descr Со скидкой 20% до 25.09.17
+			.price-row__item
+				.time-el.time-el--bad 24 500 р.
+				.price-descr базовая стоимость
 		.btn-row
 			.btn.btn-baner.get-modal Оставить заявку
-			a(href="#").btn.btn--blue Оплатить картой
+			a(href="http://www.itexpert.ru/rus/services/training/moscow/detail.php?ID=7796").btn.btn--blue Оплатить картой
 			a(rel="m_PageScroll2id" href="#program").btn.btn--blue Программа курса
 
 //.section.section--grey#about
@@ -141,7 +147,7 @@ include ../module/**/*.jade
 	.main-cont
 		.plan
 			.plan__el
-				.plan__img(style="background-image:url('https://static.tildacdn.com/tild3062-3463-4433-b133-643962616531/timgouw69753.jpg')")
+				.plan__img(style="background-image:url('img/baner-1.jpg')")
 				.plan__info
 					.plan__title В ходе тренинга вы
 					.plan__text
@@ -161,7 +167,7 @@ include ../module/**/*.jade
 						li Заложить основы гибкого мышления
 						li Безошибочно применять фреймворки Agile в Вашем бизнесе
 						li Открыть новые карьерные возможности за счёт подтверждения знаний международным сертификатом Certified Agile Professional
-			.plan__img(style="background-image:url('https://static.tildacdn.com/tild3935-6139-4566-b466-323333336464/williamiven19843.jpg')")
+			.plan__img(style="background-image:url('img/baner-2.jpg')")
 
 .section#program
 	.main-cont
@@ -241,7 +247,8 @@ include ../module/**/*.jade
 .section.section--grey
 	.main-cont
 		.advant-title.title  Получение сертификата
-		.cert-text Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile"
+		.cert-text Участники курса, выполнившие все практические задания курса, дополнительно получат сертификат ICAgile Certified Professional от международного консорциума ICAgile
+		a(href="http://www.icagile.com/Overview").cert-text__link Сайт консорциума
 		.cert-img
 			img(src="img/cert-partners.png", alt="")
 		.cert-text Совместно с:
@@ -254,6 +261,13 @@ include ../module/**/*.jade
 		.advant-title.title  Пример получаемого сертификата
 			.cert-img__el
 				img(src="img/sert.jpg", alt="")
+
+.section
+	.main-cont
+		.advant-title.title  Заменит ли Agile водопадный подход?
+			.video
+				.video-wrap
+					iframe(width="100%" class="video-el" height="100%" src="https://www.youtube.com/embed/DNJjjp_nK5I" frameborder="0" allowfullscreen)
 
 .section.section--trener
 	.main-cont
@@ -273,12 +287,18 @@ include ../module/**/*.jade
 	.main-cont
 		.get-icon
 			+icon("interface","icon")
-		.get-title.title  оставьте свою заявку уже сегодня
-		.title--pay  Стоимость курса 19 500р
-
+		.get-title.title.title--sale  Часто свободные места в группе заканчиваются задолго до начала занятий. Поэтому заявку на обучение необходимо отправить как можно раньше!
+		.price-row.price-row--dark
+			.price-row__item
+				.time-el 19 500 р.
+				.price-descr Со скидкой 20% до 25.09.17
+			.price-row__item
+				.time-el.time-el--bad 24 500 р.
+				.price-descr базовая стоимость
+		//.title--pay  Стоимость курса 19 500 р.
 		.btn-row
 			.btn.btn-baner.get-modal Оставить заявку
-			a(href="#").btn.btn--blue Оплатить картой
+			a(href="http://www.itexpert.ru/rus/services/training/moscow/detail.php?ID=7796").btn.btn--blue Оплатить картой
 		a(href="tel:+7(495)981-57-10").get-phone +7 (495) 981-57-10
 		a(href="mailto:info@itexpert.ru").get-email info@itexpert.ru
 
@@ -290,16 +310,16 @@ include ../module/**/*.jade
 		.thx.hidden
 			.thx-wrap
 				+icon("interface","icon")
-				.thx-text Спасибо, что приняли приглашение! <br> За день до вебинара Вам придёт сообщение со ссылкой для подключения.<br> Ждём Вас на обучение!
+				.thx-text Спасибо, что приняли приглашение!
 		form(action="javascript:void(null);")#myform
+			select(id="date_form")
+				option 12-13.10.2017
+				option 16-17.11.2017
 			input(type="text" class="form-control" id="name_form" placeholder="Имя и Фамилия" name="name")
-			input(type="text" class="form-control" id="companytype" placeholder="К какой отрасли относится Ваша компания:" name="companytype")
-			input(type="text" class="form-control" id="company" placeholder="Из какой Вы компании" name="company")
-			input(type="text" class="form-control" id="worktype" placeholder="За какой участок работы Вы отвечаете" name="worktype")
-			textarea(name="text" id="text" class="form-control" rows="5" required="required" placeholder="Ответы на какие вопросы хотели бы получить на вебинаре:" aria-required="true")
-			input(type="text" class="form-control" id="email_form" placeholder="Ваш e-mail" name="email")
-			input(type="text" class="form-control" id="phone_form" placeholder="Ваш телефон" name="phone")
-			input(type="text" class="form-control" id="town" placeholder="Из какого Вы города(страны)" name="town")
+			input(type="text" class="form-control" id="email_form" placeholder="Почта" name="email")
+			input(type="text" class="form-control" id="phone_form" placeholder="Телефон" name="phone")
+			textarea(name="text" id="text" class="form-control" rows="5" required="required" placeholder="Ваше сообщение.Если плательщиком выступит организация, укажите её название" aria-required="true")
+
 
 			input(type="submit" ).btn--blue
 include ./block_html/_script.jade
